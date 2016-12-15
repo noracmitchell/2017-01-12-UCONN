@@ -13,7 +13,7 @@ startdate: 2017-01-12      # machine-readable start date for the workshop in YYY
 enddate: 2017-01-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Nora Mitchell, James Mickley, Pariksheet Nanda, Cera Fisher"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Henry Frye, Kristen Nolting, Andrew Frank, Jacob Kasper"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["nora.mitchell@uconn.edu; james.mickley@uconn.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+contact: ["nora.mitchell@uconn.edu;james.mickley@uconn.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad: http://pad.software-carpentry.org/2017-01-12-UCONN            # optional: URL for the workshop Etherpad if there is one
 eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -160,7 +160,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
         ,
         {% endunless %}
       {% endif %}
-      <a href='mailto:{{contact}}'>{{contact}}</a>
+      <a href='mailto:{{contact}}'>nora.mitchell@uconn.edu or james.mickley@uconn.edu</a>
     {% endfor %}
   {% else %}
     to-be-announced
@@ -182,17 +182,17 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop Survey</a></p>
 
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell - Cera Fisher</td> </tr>
+      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell - <strong>Cera Fisher</strong></td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Programming with R - Nora Mitchell</td> </tr>
+      <tr> <td>13:00</td>  <td>Programming with R - <strong>Nora Mitchell</strong></td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -200,10 +200,10 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Programming with R Continued - James Mickley</td> </tr>
+      <tr> <td>09:00</td>  <td>Programming with R Continued - <strong>James Mickley</strong></td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Version control with Git - Pariksheet Nanda</td> </tr>
+      <tr> <td>13:00</td>  <td>Version control with Git - <strong>Pariksheet Nanda</strong></td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -226,9 +226,9 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
 -->
 {% if page.etherpad %}
 <p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}" target="_blank">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  We will use this Etherpad during the workshop for chatting, asking questions, taking notes collaboratively, and sharing URLs or bits of code.
 </p>
 {% endif %}
 
@@ -263,7 +263,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
       <li>Looping over files</li>
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
+      <li><a href="{{site.swc_pages}}/shell-novice/reference/" target="_blank">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
@@ -276,7 +276,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
       <li>Reading in and writing out data</li>
       <li>Subsetting data</li>
       
-      <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/">Reference...</a></li>
+      <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/" target="_blank">Reference...</a></li>
     </ul>
   </div>
 </div>
@@ -291,7 +291,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
       <li>Subsettingand reshaping data with dplyr and tidyr</li>
       <li>Producing reports and notebooks with knitr</li>
       <li>Writing good software</li>
-      <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/">Reference...</a></li>
+      <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/" target="_blank">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
@@ -304,13 +304,37 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
       <li>Working on the web with Github: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
       <li>Collaborating with git</li>
       <li>Resolving conflicts</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
+      <li><a href="{{site.swc_pages}}/git-novice/reference/" target="_blank">Reference...</a></li>
     </ul>
   </div>
 </div>
 
 <hr/>
 
+
+<h2 id="resources">Resources</h2>
+<p> We'll update this with some resources to help improve your skills after the workshop. </p>
+<!-- Commented out for now
+<p> Here are some resources from our workshop that you can refer to to help improve your skills. </p>
+<ul>
+	<li><a href="http://swcarpentry.github.io/shell-novice/" target="_blank">Shell Lesson</a> - The lesson we followed for shell.  Includes stuff we didn't cover.</li>
+	<li><a href="http://swcarpentry.github.io/git-novice/" target="_blank">Git Lesson</a> - The lesson we followed for git (but with a different example).</li>
+	<li><a href="http://software-carpentry.org/lessons/" target="_blank">Other Software Carpentry Lessons</a> - Help expand your skills in computer programming (consider taking another workshop!)</li>
+	<li><a href="resources/shell.txt" target="_blank">Our Shell code and output</a> - In text file format</li>
+	<li><a href="resources/git.txt" target="_blank">Our Git code and output</a> - In text file format</li>
+	<li><a href="resources/2017-1-12-uconn_Etherpad.html" target="_blank">Export of our Etherpad</a></li>
+	<li><a href="http://explainshell.com" target="_blank">explainshell.com</a> - A tool for breaking down a shell command into its parts.</li>
+	<li><a href="http://man.cx" target="_blank">Online manual for shell commands</a></li>
+	<li><a href="http://regexr.com/" target="_blank">Regexr.com</a> - A tool for working with regular expressions/wildcard/text pattern matching.</li>
+	<li>Options to store Git repositories:
+		<ul>
+			<li><a href="http://github.com" target="_blank">GitHub</a> - This is the most widely used.  No private repositories by default, but has an <a href="https://education.github.com/discount_requests/new" target_"blank">education discount.</a></li>
+			<li><a href="http://gitlab.com" target="_blank">GitLab</a> - Similar to github, can be run privately on your own server, and also supports unlimited private repositories.</li>
+			<li><a href="http://bitbucket.org" target="_blank">Bitbucket</a> - Also has an education discount.</li>
+		</ul>
+	</li>
+</ul>
+-->
 <!--
   SETUP
 
@@ -350,7 +374,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <ol>
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-        <li>Run the installer and follow the steps bellow:
+        <li>Run the installer and <strong> carefully follow the steps below:</strong>
           <ol>
             <!-- Git 2.8.2 Setup -->
             <!-- Information -->
