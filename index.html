@@ -224,6 +224,7 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
+
 {% if page.etherpad %}
 <p id="etherpad">
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}" target="_blank">{{page.etherpad}}</a>.
@@ -231,6 +232,17 @@ eventbrite: 30193098370    # optional: alphanumeric key for Eventbrite registrat
   We will use this Etherpad during the workshop for chatting, asking questions, taking notes collaboratively, and sharing URLs or bits of code.
 </p>
 {% endif %}
+
+<p id="data">
+  <strong>Data:</strong> 
+  <br/>
+  Here are links to the data we will be using for the workshop.
+  <ul>
+    <li><a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">R Gapminder Data</a></li>
+    
+  <ul>
+</p>
+	  
 
 <hr/>
 
